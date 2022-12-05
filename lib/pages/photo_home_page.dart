@@ -14,6 +14,30 @@ class PhotoHomePage extends StatelessWidget {
           title: const Text("App Photos"),
           elevation: 12,
         ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.purple,
+                  image: DecorationImage(
+                      image: AssetImage('assets/team.jpg'), fit: BoxFit.cover),
+                ),
+                child: Text('App Users - User list 🧐',
+                    style: TextStyle(fontSize: 25)),
+              ),
+              ListTile(
+                title: const Text(
+                  '😎 Ver el listado de usuarios 😎',
+                ),
+                onTap: () {
+                  print('ir al listado de usuarios');
+                },
+              ),
+            ],
+          ),
+        ),
         body: SingleChildScrollView(
             child: Column(
           children: [
