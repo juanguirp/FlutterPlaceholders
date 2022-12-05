@@ -44,7 +44,7 @@ class PhotoHomePage extends StatelessWidget {
             PhotoSwiper(photos: getPhotoProvider.photosResult),
             PhotoSlider(
               photos: getPhotoProvider.photosResult,
-              title: 'Photos',
+              title: 'Photos totales',
             ),
           ],
         )));
